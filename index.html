@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ranjith Kumar | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="bg-gray-100 text-gray-900 dark:bg-black dark:text-white transition-colors duration-300">
+
+<!-- Navbar -->
+<nav class="bg-white shadow px-6 py-4 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+    <!-- Left: Logo -->
+    <div class="flex items-center gap-2">
+      <span class="font-bold text-lg">Ranjith.</span>
+    </div>
+
+    <!-- Center: Menu (Desktop) -->
+    <ul class="hidden md:flex gap-6 text-sm font-medium">
+      <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
+      <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+      <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+    </ul>
+
+    <!-- Mobile Hamburger -->
+    <button id="menu-toggle" class="md:hidden text-2xl">☰</button>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="hidden flex-col mt-4 space-y-4 md:hidden transition-all duration-300 ease-in-out">
+    <ul class="flex flex-col gap-4 text-sm font-medium">
+      <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
+      <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+      <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="min-h-screen flex flex-col md:flex-row items-center justify-between px-8 md:px-20 py-12 gap-12">
+    
+    <!-- Left Text -->
+    <div class="flex-1">
+      <span class="inline-flex items-center text-sm text-blue-600 font-medium mb-4">
+        <span class="w-2 h-2 rounded-full bg-blue-600 mr-2"></span> AVAILABLE FOR WORK
+      </span>
+      <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+        Hi, I’m a<br> 
+        <span class="text-black">Full Stack Developer</span>
+      </h1>
+      <p class="text-lg text-gray-600 mb-6 max-w-lg">
+        I have 3+ years of experience delivering 50+ projects worldwide, 
+        specializing in React.js, Flutter, Firebase, Supabase, PHP, and scalable digital solutions.
+      </p>
+    
+    </div>
+
+    <!-- Right Cards -->
+    <div class="flex-1 flex flex-col md:flex-row gap-6">
+      <!-- Info Card -->
+      <!-- <div class="bg-white p-6 rounded-2xl shadow flex-1">
+        <h3 class="font-bold text-lg mb-2">RanCoTech</h3>
+        <p class="text-sm text-gray-600 mb-4">Perambalur, India</p>
+        <div class="bg-gray-100 rounded-xl p-4 mb-4">
+          <p class="text-sm font-medium">Full Stack Developer</p>
+          <p class="text-blue-600 text-sm">$20/hr – $50/hr</p>
+        </div>
+        <span class="text-xs text-gray-500">Currently working with international clients</span>
+      </div> -->
+
+      <div class="bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-lg flex-1 max-w-sm">
+  <!-- Header with Fiverr Logo -->
+  <div class="flex items-center gap-3 mb-4">
+    <a href="https://www.fiverr.com/ranjithkumar31" target="_blank">
+    <img src="/assets/img/Fiverr.png" 
+         alt="Fiverr Logo" class="h-6"></a>
+    <h3 class="font-bold text-lg">Fiverr</h3>
+  </div>
+
+  <!-- Profile Info -->
+  <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">Freelance Developer</p>
+
+  <!-- Stats Section -->
+  <div class="grid grid-cols-1 gap-4 bg-gray-100 dark:bg-gray-800 rounded-xl p-4 mb-6">
+    <div class="flex items-center gap-2">
+      <i class="ri-shopping-bag-3-fill text-green-600 text-xl"></i>
+      <p class="text-sm font-medium text-gray-700 dark:text-gray-200">60+ Orders</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <i class="ri-team-fill text-blue-600 text-xl"></i>
+      <p class="text-sm font-medium text-gray-700 dark:text-gray-200">55+ Clients</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <i class="ri-star-fill text-yellow-500 text-xl"></i>
+      <p class="text-sm font-medium text-gray-700 dark:text-gray-200">4.9 Rating</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <i class="ri-time-fill text-purple-600 text-xl"></i>
+      <p class="text-sm font-medium text-gray-700 dark:text-gray-200">4 Years Exp.</p>
+    </div>
+  </div>
+
+   
+
+  <!-- Footer -->
+  <span class="text-xs text-gray-500 dark:text-gray-400">
+    Trusted by international clients worldwide
+  </span>
+</div>
+
+      <!-- Profile Card -->
+      <div class="bg-white p-6 rounded-2xl shadow flex-1 flex flex-col items-center justify-center">
+        <img src="/assets/img/rk.jpeg" alt="profile" class="rounded-xl mb-4">
+        <p class="text-center text-sm text-gray-600">Building scalable apps & websites globally 🌍</p>
+      </div>
+    </div>
+</section>
+
+
+<section id="skills" class="py-12 px-6 bg-white dark:bg-gray-900">
+  <h2 class="text-2xl font-bold text-center mb-10 text-gray-900 dark:text-white"> Skills</h2>
+
+  <div class="flex flex-wrap justify-center gap-6 max-w-6xl mx-auto">
+
+    <!-- Skill Box -->
+    <div class="w-28 h-28 flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition">
+      <i class="ri-html5-fill text-4xl text-orange-600"></i>
+      <p class="mt-2 text-sm font-medium">HTML</p>
+    </div>
+
+    <div class="w-28 h-28 flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition">
+      <i class="ri-css3-fill text-4xl text-blue-600"></i>
+      <p class="mt-2 text-sm font-medium">CSS</p>
+    </div>
+
+    <div class="w-28 h-28 flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition">
+      <i class="ri-javascript-fill text-4xl text-yellow-500"></i>
+      <p class="mt-2 text-sm font-medium">JavaScript</p>
+    </div>
+
+    <div class="w-28 h-28 flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition">
+      <i class="ri-reactjs-fill text-4xl text-cyan-500"></i>
+      <p class="mt-2 text-sm font-medium">React</p>
+    </div>
+
+    <div class="w-28 h-28 flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition">
+      <i class="ri-flutter-fill text-4xl text-sky-500"></i>
+      <p class="mt-2 text-sm font-medium">Flutter</p>
+    </div>
+
+    <div class="w-28 h-28 flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition">
+      <i class="ri-code-s-slash-fill text-4xl text-blue-400"></i>
+      <p class="mt-2 text-sm font-medium">Dart</p>
+    </div>
+
+    <div class="w-28 h-28 flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition">
+      <i class="ri-code-fill text-4xl text-indigo-600"></i>
+      <p class="mt-2 text-sm font-medium">PHP</p>
+    </div>
+
+    <div class="w-28 h-28 flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition">
+      <i class="ri-database-2-fill text-4xl text-orange-500"></i>
+      <p class="mt-2 text-sm font-medium">MySQL</p>
+    </div>
+
+    <div class="w-28 h-28 flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition">
+      <i class="ri-fire-fill text-4xl text-yellow-600"></i>
+      <p class="mt-2 text-sm font-medium">Firebase</p>
+    </div>
+
+    <div class="w-28 h-28 flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition">
+      <i class="ri-database-fill text-4xl text-green-500"></i>
+      <p class="mt-2 text-sm font-medium">Supabase</p>
+    </div>
+
+    <div class="w-28 h-28 flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition">
+      <i class="ri-git-branch-fill text-4xl text-red-600"></i>
+      <p class="mt-2 text-sm font-medium">Git</p>
+    </div>
+
+    <div class="w-28 h-28 flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition">
+      <i class="ri-windy-fill text-4xl text-teal-500"></i>
+      <p class="mt-2 text-sm font-medium">Tailwind</p>
+    </div>
+
+  </div>
+</section>
+        
+<section id="projects" class="bg-black text-white px-0 py-16 md:py-24">
+  <div class="max-w-7xl mx-auto">
+    <!-- Section Header -->
+    <p class="text-gray-500 font-light mb-3 text-center">PROJECTS</p>
+    <h2 class="text-3xl font-bold text-white-900 mb-3 text-center">Building Impactful Digital Solutions</h2>
+    <p class="text-lg font-light text-gray-100 mb-10 text-center">
+      A selection of projects built with clean UI, modern tools, and user-first design.
+    </p>
+
+    <!-- Projects Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-white">
+
+      <!-- Project Card 1 -->
+      <div class="rounded-xl bg-white overflow-hidden shadow-md hover:shadow-lg transition">
+        <div class="h-50 bg-neutral-800 flex items-center justify-center">
+          <img src="/assets/img/projects/3.png" alt="Siddhars Research">
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg text-black font-bold mb-2">Siddhars Research</h3>
+          <p class="text-sm text-neutral-400 mb-4">
+            A responsive web portal for students to apply for Siddhars Research programs, featuring secure database management, application tracking, and an admin dashboard.
+          </p>
+          <a href="https://www.18siddharsresearch.com" target="_blank"
+            class="inline-block px-4 py-2 bg-black text-white text-sm rounded-lg hover:bg-gray-800 transition">
+            Visit Site
+          </a>
+        </div>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="rounded-xl bg-white overflow-hidden shadow-md hover:shadow-lg transition">
+        <div class="h-50 bg-neutral-800 flex items-center justify-center">
+          <img src="/assets/img/projects/1.png" alt="Sol Sprint">
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg text-black font-bold mb-2">Sol Sprint</h3>
+          <p class="text-sm text-neutral-400 mb-4">
+            A Web3 wallet connect platform with support for Phantom, Solflare, Backpack, and MetaMask, logging wallet addresses into Google Sheets through Google Apps Script.
+          </p>
+          <a href="https://www.solsprint.xyz" target="_blank"
+            class="inline-block px-4 py-2 bg-black text-white text-sm rounded-lg hover:bg-gray-800 transition">
+            Visit Site
+          </a>
+        </div>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="rounded-xl bg-white overflow-hidden shadow-md hover:shadow-lg transition">
+        <div class="h-50 bg-neutral-800 flex items-center justify-center">
+          <img src="/assets/img/projects/2.png" alt="Pech Weg">
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg text-black font-bold mb-2">Pech Weg</h3>
+          <p class="text-sm text-neutral-400 mb-4">
+            Accident assistance and transport service website (Netherlands). Redesigned the dashboard UI and improved the admin panel backend for better user experience and management.
+          </p>
+          <a href="https://www.pech-weg.nl" target="_blank"
+            class="inline-block px-4 py-2 bg-black text-white text-sm rounded-lg hover:bg-gray-800 transition">
+            Visit Site
+          </a>
+        </div>
+      </div>
+
+      <!-- Project Card 4 -->
+      <div class="rounded-xl bg-white overflow-hidden shadow-md hover:shadow-lg transition">
+        <div class="h-50 bg-neutral-800 flex items-center justify-center">
+          <img src="/assets/img/projects/5.png" alt="Woterz">
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg text-black font-bold mb-2">Woterz</h3>
+          <p class="text-sm text-neutral-400 mb-4">
+            A clean and modern landing page for a water solutions company, designed with responsive UI and optimized for customer engagement.
+          </p>
+          <a href="https://www.site.woterz.com" target="_blank"
+            class="inline-block px-4 py-2 bg-black text-white text-sm rounded-lg hover:bg-gray-800 transition">
+            Visit Site
+          </a>
+        </div>
+      </div>
+
+      <!-- Project Card 5 -->
+      <div class="rounded-xl bg-white overflow-hidden shadow-md hover:shadow-lg transition">
+        <div class="h-50 bg-neutral-800 flex items-center justify-center">
+          <img src="/assets/img/projects/4.png" alt="Prime Self Driving Cars">
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg text-black font-bold mb-2">Prime Self Driving Cars</h3>
+          <p class="text-sm text-neutral-400 mb-4">
+            A professional car rental company website with a modern frontend, showcasing available vehicles, booking features, and an easy-to-use interface.
+          </p>
+          <a href="https://www.primeselfdrivingcars.com" target="_blank"
+            class="inline-block px-4 py-2 bg-black text-white text-sm rounded-lg hover:bg-gray-800 transition">
+            Visit Site
+          </a>
+        </div>
+      </div>
+
+      <!-- Project Card 6 -->
+      <div class="rounded-xl bg-white overflow-hidden shadow-md hover:shadow-lg transition">
+        <div class="h-50 bg-neutral-800 flex items-center justify-center">
+          <img src="/assets/img/projects/6.png" alt="Bharath First School">
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg text-black font-bold mb-2">Bharath First School</h3>
+          <p class="text-sm text-neutral-400 mb-4">
+            Educational institution website for a school in India, featuring SEO optimization, student information, and responsive layouts for better accessibility.
+          </p>
+          <a href="https://www.bharathfirstschool.com" target="_blank"
+            class="inline-block px-4 py-2 bg-black text-white text-sm rounded-lg hover:bg-gray-800 transition">
+            Visit Site
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Contact -->
+<section id="contact" class="py-20 px-6 max-w-3xl mx-auto text-center">
+    <h3 class="text-3xl font-semibold mb-6">Get In Touch</h3>
+    <p class="mb-6">Feel free to reach out via any platforms.</p>
+    <div class="flex justify-center gap-6">
+      <a href="mailto:ranjithkumar31072002@gmail.com" target="_blank" class="px-1 py-3 bg-white-600 text-white rounded-lg hover:bg-white-700 transition"><img src="/assets/img/mail.png" class="w-7" alt=""></a>
+      <a href="https://www.linkedin.com/in/ranjithkumar31/" target="_blank" class="px-1 py-3 bg-white-600 text-white rounded-lg hover:bg-white-700 transition"><img src="/assets/img/linkedin.png" class="w-7" alt=""></a>
+      <a href="https://github.com/RanjithKumarKarnan" target="_blank" class="px-1 py-3 bg-white-600 text-white rounded-lg hover:bg-white-700 transition"><img src="/assets/img/github.png" class="w-7" alt=""></a>
+      <a href="https://x.com/karnan_ran48825" target="_blank" class="px-1 py-3 bg-white-600 text-white rounded-lg hover:bg-white-700 transition"><img src="/assets/img/x.png" class="w-7" alt=""></a>
+    </div>    
+</section>
+
+  <script src="/assets/js/script.js"></script>
+</body>
+</html>
