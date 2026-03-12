@@ -5,305 +5,324 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ranjith Kumar | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#DC2626'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-<body class="bg-gray-100 text-gray-900 dark:bg-black dark:text-white transition-colors duration-300">
+<body class="bg-white text-gray-900 font-sans antialiased">
 
 <!-- Navbar -->
-<nav class="bg-white shadow px-6 py-4 sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto flex items-center justify-between">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur border-b border-gray-100">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <span class="text-xl font-bold tracking-tight">Ranjith<span class="text-red-600">.</span></span>
 
-    <!-- Left: Logo -->
-    <div class="flex items-center gap-2">
-      <span class="font-bold text-lg">Ranjith.</span>
-    </div>
-
-    <!-- Center: Menu (Desktop) -->
-    <ul class="hidden md:flex gap-6 text-sm font-medium">
-      <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
-      <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
-      <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+    <ul class="hidden md:flex gap-8 text-sm font-medium text-gray-600">
+      <li><a href="#about" class="hover:text-red-600 transition-colors">About</a></li>
+      <li><a href="#skills" class="hover:text-red-600 transition-colors">Skills</a></li>
+      <li><a href="#projects" class="hover:text-red-600 transition-colors">Projects</a></li>
+      <li><a href="#contact" class="hover:text-red-600 transition-colors">Contact</a></li>
     </ul>
 
-    <!-- Mobile Hamburger -->
-    <button id="menu-toggle" class="md:hidden text-2xl">☰</button>
+    <div class="flex items-center gap-3">
+      <a href="mailto:ranjithkumar31072002@gmail.com" class="hidden md:inline-flex items-center gap-2 bg-red-600 text-white text-sm font-medium px-4 py-2 rounded-full hover:bg-red-700 transition-colors">
+        Hire Me
+      </a>
+      <button id="menu-toggle" class="md:hidden text-gray-700 text-2xl leading-none">&#9776;</button>
+    </div>
   </div>
 
-  <!-- Mobile Dropdown Menu -->
-  <div id="mobile-menu" class="hidden flex-col mt-4 space-y-4 md:hidden transition-all duration-300 ease-in-out">
-    <ul class="flex flex-col gap-4 text-sm font-medium">
-      <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
-      <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
-      <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-white px-6 py-4">
+    <ul class="flex flex-col gap-4 text-sm font-medium text-gray-700">
+      <li><a href="#about" class="hover:text-red-600 transition-colors">About</a></li>
+      <li><a href="#skills" class="hover:text-red-600 transition-colors">Skills</a></li>
+      <li><a href="#projects" class="hover:text-red-600 transition-colors">Projects</a></li>
+      <li><a href="#contact" class="hover:text-red-600 transition-colors">Contact</a></li>
     </ul>
   </div>
 </nav>
 
-<section class="min-h-screen flex flex-col md:flex-row items-center justify-between px-8 md:px-20 py-12 gap-12">
-    
-    <!-- Left Text -->
-    <div class="flex-1">
-      <span class="inline-flex items-center text-sm text-blue-600 font-medium mb-4">
-        <span class="w-2 h-2 rounded-full bg-blue-600 mr-2"></span> AVAILABLE FOR WORK
-      </span>
-      <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
-        Hi, I’m a<br> 
-        <span class="text-black">Full Stack Developer</span>
-      </h1>
-      <p class="text-lg text-gray-600 mb-6 max-w-lg">
-        I have 3+ years of experience delivering 50+ projects worldwide, 
-        specializing in React.js, Flutter, Firebase, Supabase, PHP, and scalable digital solutions.
-      </p>
-    
-    </div>
+<!-- Hero -->
+<section id="about" class="min-h-screen flex items-center pt-20">
+  <div class="max-w-6xl mx-auto px-6 w-full">
+    <div class="grid md:grid-cols-2 gap-16 items-center py-20">
 
-    <!-- Right Cards -->
-    <div class="flex-1 flex flex-col md:flex-row gap-6">
-      <!-- Info Card -->
-      <!-- <div class="bg-white p-6 rounded-2xl shadow flex-1">
-        <h3 class="font-bold text-lg mb-2">RanCoTech</h3>
-        <p class="text-sm text-gray-600 mb-4">Perambalur, India</p>
-        <div class="bg-gray-100 rounded-xl p-4 mb-4">
-          <p class="text-sm font-medium">Full Stack Developer</p>
-          <p class="text-blue-600 text-sm">$20/hr – $50/hr</p>
+      <!-- Left -->
+      <div>
+        <div class="inline-flex items-center gap-2 bg-red-50 text-red-600 text-xs font-semibold px-3 py-1.5 rounded-full mb-6 uppercase tracking-wider">
+          <span class="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span>
+          Available for Work
         </div>
-        <span class="text-xs text-gray-500">Currently working with international clients</span>
-      </div> -->
+        <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6 tracking-tight">
+          Hi, I'm<br>
+          <span class="text-red-600">Ranjith Kumar</span>
+        </h1>
+        <p class="text-gray-500 text-lg leading-relaxed mb-8 max-w-md">
+          I build scalable, high-performance web applications and SaaS dashboards using React.js, Next.js, and modern frontend technologies. With 3+ years of experience including freelancing, I focus on creating fast, responsive, and user-centric digital experiences.
+        </p>
+        <div class="flex items-center gap-4 flex-wrap">
+          <a href="#projects" class="bg-red-600 text-white font-semibold px-6 py-3 rounded-full hover:bg-red-700 transition-colors text-sm">
+            View Projects
+          </a>
+          <a href="#contact" class="border border-gray-200 text-gray-700 font-semibold px-6 py-3 rounded-full hover:border-red-600 hover:text-red-600 transition-colors text-sm">
+            Get In Touch
+          </a>
+        </div>
 
-      <div class="bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-lg flex-1 max-w-sm">
-  <!-- Header with Fiverr Logo -->
-  <div class="flex items-center gap-3 mb-4">
-    <a href="https://www.fiverr.com/ranjithkumar31" target="_blank">
-    <img src="/assets/img/Fiverr.png" 
-         alt="Fiverr Logo" class="h-6"></a>
-    <h3 class="font-bold text-lg">Fiverr</h3>
-  </div>
-
-  <!-- Profile Info -->
-  <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">Freelance Developer</p>
-
-  <!-- Stats Section -->
-  <div class="grid grid-cols-1 gap-4 bg-gray-100 dark:bg-gray-800 rounded-xl p-4 mb-6">
-    <div class="flex items-center gap-2">
-      <i class="ri-shopping-bag-3-fill text-green-600 text-xl"></i>
-      <p class="text-sm font-medium text-gray-700 dark:text-gray-200">60+ Orders</p>
-    </div>
-    <div class="flex items-center gap-2">
-      <i class="ri-team-fill text-blue-600 text-xl"></i>
-      <p class="text-sm font-medium text-gray-700 dark:text-gray-200">55+ Clients</p>
-    </div>
-    <div class="flex items-center gap-2">
-      <i class="ri-star-fill text-yellow-500 text-xl"></i>
-      <p class="text-sm font-medium text-gray-700 dark:text-gray-200">4.9 Rating</p>
-    </div>
-    <div class="flex items-center gap-2">
-      <i class="ri-time-fill text-purple-600 text-xl"></i>
-      <p class="text-sm font-medium text-gray-700 dark:text-gray-200">4 Years Exp.</p>
-    </div>
-  </div>
-
-   
-
-  <!-- Footer -->
-  <span class="text-xs text-gray-500 dark:text-gray-400">
-    Trusted by international clients worldwide
-  </span>
-</div>
-
-      <!-- Profile Card -->
-      <div class="bg-white p-6 rounded-2xl shadow flex-1 flex flex-col items-center justify-center">
-        <img src="/assets/img/rk.jpeg" alt="profile" class="rounded-xl mb-4">
-        <p class="text-center text-sm text-gray-600">Building scalable apps & websites globally 🌍</p>
+        <!-- Stats Row -->
+        <div class="flex gap-8 mt-12 pt-8 border-t border-gray-100">
+          <div>
+            <p class="text-3xl font-bold text-gray-900">50+</p>
+            <p class="text-sm text-gray-500 mt-1">Projects</p>
+          </div>
+          <div>
+            <p class="text-3xl font-bold text-gray-900">4.9</p>
+            <p class="text-sm text-gray-500 mt-1">Fiverr Rating</p>
+          </div>
+          <div>
+            <p class="text-3xl font-bold text-gray-900">3.4yr</p>
+            <p class="text-sm text-gray-500 mt-1">Experience (Professional & Freelance)</p>
+          </div>
+        </div>
       </div>
+
+      <!-- Right -->
+      <div class="flex flex-col gap-5">
+        <!-- Profile Photo -->
+        <div class="relative">
+          <img src="/assets/img/rk.jpeg" alt="Ranjith Kumar"
+            class="w-full max-w-xs mx-auto rounded-3xl object-cover shadow-lg">
+          <div class="absolute -bottom-3 -right-3 md:right-8 bg-white border border-gray-100 shadow-md rounded-2xl px-4 py-3 text-sm font-medium text-gray-700">
+            🌍 Global Clients
+          </div>
+        </div>
+
+        <!-- Fiverr Badge -->
+        <div class="bg-gray-50 border border-gray-100 rounded-2xl p-5 max-w-xs mx-auto w-full">
+          <div class="flex items-center gap-3 mb-3">
+            <a href="https://www.fiverr.com/ranjithkumar31" target="_blank">
+              <img src="/assets/img/Fiverr.png" alt="Fiverr" class="h-5">
+            </a>
+            <div class="flex items-center gap-1 ml-auto">
+              <i class="ri-star-fill text-yellow-400 text-sm"></i>
+              <span class="text-sm font-bold">4.9</span>
+            </div>
+          </div>
+          <div class="flex gap-4 text-sm text-gray-600">
+            <div class="flex items-center gap-1.5">
+              <i class="ri-shopping-bag-line text-red-600"></i>
+              <span>60+ Orders</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <i class="ri-team-line text-red-600"></i>
+              <span>55+ Clients</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-</section>
-
-
-<section id="skills" class="py-12 px-6 bg-white dark:bg-gray-900">
-  <h2 class="text-2xl font-bold text-center mb-10 text-gray-900 dark:text-white"> Skills</h2>
-
-  <div class="flex flex-wrap justify-center gap-6 max-w-6xl mx-auto">
-
-    <!-- Skill Box -->
-    <div class="w-28 h-28 flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition">
-      <i class="ri-html5-fill text-4xl text-orange-600"></i>
-      <p class="mt-2 text-sm font-medium">HTML</p>
-    </div>
-
-    <div class="w-28 h-28 flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition">
-      <i class="ri-css3-fill text-4xl text-blue-600"></i>
-      <p class="mt-2 text-sm font-medium">CSS</p>
-    </div>
-
-    <div class="w-28 h-28 flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition">
-      <i class="ri-javascript-fill text-4xl text-yellow-500"></i>
-      <p class="mt-2 text-sm font-medium">JavaScript</p>
-    </div>
-
-    <div class="w-28 h-28 flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition">
-      <i class="ri-reactjs-fill text-4xl text-cyan-500"></i>
-      <p class="mt-2 text-sm font-medium">React</p>
-    </div>
-
-    <div class="w-28 h-28 flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition">
-      <i class="ri-flutter-fill text-4xl text-sky-500"></i>
-      <p class="mt-2 text-sm font-medium">Flutter</p>
-    </div>
-
-    <div class="w-28 h-28 flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition">
-      <i class="ri-code-s-slash-fill text-4xl text-blue-400"></i>
-      <p class="mt-2 text-sm font-medium">Dart</p>
-    </div>
-
-    <div class="w-28 h-28 flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition">
-      <i class="ri-code-fill text-4xl text-indigo-600"></i>
-      <p class="mt-2 text-sm font-medium">PHP</p>
-    </div>
-
-    <div class="w-28 h-28 flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition">
-      <i class="ri-database-2-fill text-4xl text-orange-500"></i>
-      <p class="mt-2 text-sm font-medium">MySQL</p>
-    </div>
-
-    <div class="w-28 h-28 flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition">
-      <i class="ri-fire-fill text-4xl text-yellow-600"></i>
-      <p class="mt-2 text-sm font-medium">Firebase</p>
-    </div>
-
-    <div class="w-28 h-28 flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition">
-      <i class="ri-database-fill text-4xl text-green-500"></i>
-      <p class="mt-2 text-sm font-medium">Supabase</p>
-    </div>
-
-    <div class="w-28 h-28 flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition">
-      <i class="ri-git-branch-fill text-4xl text-red-600"></i>
-      <p class="mt-2 text-sm font-medium">Git</p>
-    </div>
-
-    <div class="w-28 h-28 flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition">
-      <i class="ri-windy-fill text-4xl text-teal-500"></i>
-      <p class="mt-2 text-sm font-medium">Tailwind</p>
-    </div>
-
   </div>
 </section>
-        
-<section id="projects" class="bg-black text-white px-0 py-16 md:py-24">
-  <div class="max-w-7xl mx-auto">
-    <!-- Section Header -->
-    <p class="text-gray-500 font-light mb-3 text-center">PROJECTS</p>
-    <h2 class="text-3xl font-bold text-white-900 mb-3 text-center">Building Impactful Digital Solutions</h2>
-    <p class="text-lg font-light text-gray-100 mb-10 text-center">
-      A selection of projects built with clean UI, modern tools, and user-first design.
-    </p>
 
-    <!-- Projects Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-white">
+<!-- Skills -->
+<section id="skills" class="py-24 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="mb-14">
+      <p class="text-red-600 text-sm font-semibold uppercase tracking-widest mb-2">What I Work With</p>
+      <h2 class="text-3xl font-bold text-gray-900">Skills & Technologies</h2>
+    </div>
 
-      <!-- Project Card 1 -->
-      <div class="rounded-xl bg-white overflow-hidden shadow-md hover:shadow-lg transition">
-        <div class="h-50 bg-neutral-800 flex items-center justify-center">
-          <img src="/assets/img/projects/3.png" alt="Siddhars Research">
+    <div class="flex flex-wrap gap-3">
+      <span class="skill-tag"><i class="ri-html5-fill text-orange-500"></i> HTML</span>
+      <span class="skill-tag"><i class="ri-css3-fill text-blue-500"></i> CSS</span>
+      <span class="skill-tag"><i class="ri-windy-fill text-teal-500"></i> Tailwind</span>
+      <span class="skill-tag"><i class="ri-bootstrap-fill text-teal-500"></i> Bootstrap</span>
+      <span class="skill-tag"><i class="ri-javascript-fill text-yellow-500"></i> JavaScript</span>
+      <span class="skill-tag"><i class="ri-reactjs-fill text-cyan-500"></i> React.js</span>
+      <span class="skill-tag"><i class="ri-nextjs-fill text-cyan-500"></i> Next.js</span>
+      <span class="skill-tag"><i class="ri-database-2-fill text-orange-500"></i> MySQL</span>
+      <span class="skill-tag"><i class="ri-database-2-fill text-orange-500"></i> PostgreSQL</span>
+      <span class="skill-tag"><i class="ri-flutter-fill text-sky-500"></i> Flutter</span>
+      <span class="skill-tag"><i class="ri-code-s-slash-fill text-blue-400"></i> Dart</span>
+      <span class="skill-tag"><i class="ri-php-fill text-indigo-500"></i> PHP</span>
+      <span class="skill-tag"><i class="ri-wordpress-fill text-red-500"></i> WordPress</span>
+      <span class="skill-tag"><i class="ri-git-branch-fill text-red-500"></i> Git</span>
+      <span class="skill-tag"><i class="ri-github-fill text-red-500"></i> Github</span>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="mb-14">
+      <p class="text-red-600 text-sm font-semibold uppercase tracking-widest mb-2">My Work</p>
+      <h2 class="text-3xl font-bold text-gray-900">Featured Projects</h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="group border border-gray-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
+        <div class="bg-gray-100 overflow-hidden h-48 flex items-center justify-center">
+          <img src="/assets/img/projects/3.png" alt="Siddhars Research" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
         </div>
         <div class="p-5">
-          <h3 class="text-lg text-black font-bold mb-2">Siddhars Research</h3>
-          <p class="text-sm text-neutral-400 mb-4">
-            A responsive web portal for students to apply for Siddhars Research programs, featuring secure database management, application tracking, and an admin dashboard.
+          <h3 class="font-bold text-gray-900 mb-2">Siddhars Research</h3>
+          <p class="text-sm text-gray-500 leading-relaxed mb-4">
+            Student application portal with secure database management, tracking, and admin dashboard.
           </p>
           <a href="https://www.18siddharsresearch.com" target="_blank"
-            class="inline-block px-4 py-2 bg-black text-white text-sm rounded-lg hover:bg-gray-800 transition">
-            Visit Site
+            class="inline-flex items-center gap-1.5 text-sm font-medium text-red-600 hover:gap-2.5 transition-all">
+            Visit Site <i class="ri-arrow-right-up-line"></i>
           </a>
         </div>
       </div>
 
-      <!-- Project Card 2 -->
-      <div class="rounded-xl bg-white overflow-hidden shadow-md hover:shadow-lg transition">
-        <div class="h-50 bg-neutral-800 flex items-center justify-center">
-          <img src="/assets/img/projects/1.png" alt="Sol Sprint">
+      <div class="group border border-gray-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
+        <div class="bg-gray-100 overflow-hidden h-48 flex items-center justify-center">
+          <img src="/assets/img/projects/1.png" alt="Sol Sprint" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
         </div>
         <div class="p-5">
-          <h3 class="text-lg text-black font-bold mb-2">Sol Sprint</h3>
-          <p class="text-sm text-neutral-400 mb-4">
-            A Web3 wallet connect platform with support for Phantom, Solflare, Backpack, and MetaMask, logging wallet addresses into Google Sheets through Google Apps Script.
+          <h3 class="font-bold text-gray-900 mb-2">Sol Sprint</h3>
+          <p class="text-sm text-gray-500 leading-relaxed mb-4">
+            Web3 wallet connect platform supporting Phantom, Solflare, Backpack & MetaMask with Google Sheets logging.
           </p>
           <a href="https://www.solsprint.xyz" target="_blank"
-            class="inline-block px-4 py-2 bg-black text-white text-sm rounded-lg hover:bg-gray-800 transition">
-            Visit Site
+            class="inline-flex items-center gap-1.5 text-sm font-medium text-red-600 hover:gap-2.5 transition-all">
+            Visit Site <i class="ri-arrow-right-up-line"></i>
           </a>
         </div>
       </div>
 
-      <!-- Project Card 3 -->
-      <div class="rounded-xl bg-white overflow-hidden shadow-md hover:shadow-lg transition">
-        <div class="h-50 bg-neutral-800 flex items-center justify-center">
-          <img src="/assets/img/projects/2.png" alt="Pech Weg">
+      <div class="group border border-gray-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
+        <div class="bg-gray-100 overflow-hidden h-48 flex items-center justify-center">
+          <img src="/assets/img/projects/2.png" alt="Pech Weg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
         </div>
         <div class="p-5">
-          <h3 class="text-lg text-black font-bold mb-2">Pech Weg</h3>
-          <p class="text-sm text-neutral-400 mb-4">
-            Accident assistance and transport service website (Netherlands). Redesigned the dashboard UI and improved the admin panel backend for better user experience and management.
+          <h3 class="font-bold text-gray-900 mb-2">Pech Weg</h3>
+          <p class="text-sm text-gray-500 leading-relaxed mb-4">
+            Accident assistance website (Netherlands) — redesigned dashboard UI and improved admin panel backend.
           </p>
           <a href="https://www.pech-weg.nl" target="_blank"
-            class="inline-block px-4 py-2 bg-black text-white text-sm rounded-lg hover:bg-gray-800 transition">
-            Visit Site
+            class="inline-flex items-center gap-1.5 text-sm font-medium text-red-600 hover:gap-2.5 transition-all">
+            Visit Site <i class="ri-arrow-right-up-line"></i>
           </a>
         </div>
       </div>
 
-      <!-- Project Card 4 -->
-      <div class="rounded-xl bg-white overflow-hidden shadow-md hover:shadow-lg transition">
-        <div class="h-50 bg-neutral-800 flex items-center justify-center">
-          <img src="/assets/img/projects/5.png" alt="Woterz">
+      <div class="group border border-gray-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
+        <div class="bg-gray-100 overflow-hidden h-48 flex items-center justify-center">
+          <img src="/assets/img/projects/5.png" alt="Woterz" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
         </div>
         <div class="p-5">
-          <h3 class="text-lg text-black font-bold mb-2">Woterz</h3>
-          <p class="text-sm text-neutral-400 mb-4">
-            A clean and modern landing page for a water solutions company, designed with responsive UI and optimized for customer engagement.
+          <h3 class="font-bold text-gray-900 mb-2">Woterz</h3>
+          <p class="text-sm text-gray-500 leading-relaxed mb-4">
+            Modern landing page for a water solutions company, responsive and optimized for engagement.
           </p>
           <a href="https://www.site.woterz.com" target="_blank"
-            class="inline-block px-4 py-2 bg-black text-white text-sm rounded-lg hover:bg-gray-800 transition">
-            Visit Site
+            class="inline-flex items-center gap-1.5 text-sm font-medium text-red-600 hover:gap-2.5 transition-all">
+            Visit Site <i class="ri-arrow-right-up-line"></i>
           </a>
         </div>
       </div>
 
-      <!-- Project Card 5 -->
-      <div class="rounded-xl bg-white overflow-hidden shadow-md hover:shadow-lg transition">
-        <div class="h-50 bg-neutral-800 flex items-center justify-center">
-          <img src="/assets/img/projects/4.png" alt="Prime Self Driving Cars">
+      <div class="group border border-gray-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
+        <div class="bg-gray-100 overflow-hidden h-48 flex items-center justify-center">
+          <img src="/assets/img/projects/4.png" alt="Prime Self Driving Cars" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
         </div>
         <div class="p-5">
-          <h3 class="text-lg text-black font-bold mb-2">Prime Self Driving Cars</h3>
-          <p class="text-sm text-neutral-400 mb-4">
-            A professional car rental company website with a modern frontend, showcasing available vehicles, booking features, and an easy-to-use interface.
+          <h3 class="font-bold text-gray-900 mb-2">Prime Self Driving Cars</h3>
+          <p class="text-sm text-gray-500 leading-relaxed mb-4">
+            Car rental website with modern frontend, vehicle showcase, and easy booking interface.
           </p>
           <a href="https://www.primeselfdrivingcars.com" target="_blank"
-            class="inline-block px-4 py-2 bg-black text-white text-sm rounded-lg hover:bg-gray-800 transition">
-            Visit Site
+            class="inline-flex items-center gap-1.5 text-sm font-medium text-red-600 hover:gap-2.5 transition-all">
+            Visit Site <i class="ri-arrow-right-up-line"></i>
           </a>
         </div>
       </div>
-
-    
 
     </div>
   </div>
 </section>
 
-  <!-- Contact -->
-<section id="contact" class="py-20 px-6 max-w-3xl mx-auto text-center">
-    <h3 class="text-3xl font-semibold mb-6">Get In Touch</h3>
-    <p class="mb-6">Feel free to reach out via any platforms.</p>
-    <div class="flex justify-center gap-6">
-      <a href="mailto:ranjithkumar31072002@gmail.com" target="_blank" class="px-1 py-3 bg-white-600 text-white rounded-lg hover:bg-white-700 transition"><img src="/assets/img/mail.png" class="w-7" alt=""></a>
-      <a href="https://www.linkedin.com/in/ranjithkumar31/" target="_blank" class="px-1 py-3 bg-white-600 text-white rounded-lg hover:bg-white-700 transition"><img src="/assets/img/linkedin.png" class="w-7" alt=""></a>
-      <a href="https://github.com/RanjithKumarKarnan" target="_blank" class="px-1 py-3 bg-white-600 text-white rounded-lg hover:bg-white-700 transition"><img src="/assets/img/github.png" class="w-7" alt=""></a>
-      <a href="https://x.com/karnan_ran48825" target="_blank" class="px-1 py-3 bg-white-600 text-white rounded-lg hover:bg-white-700 transition"><img src="/assets/img/x.png" class="w-7" alt=""></a>
-    </div>    
+<!-- Contact -->
+<section id="contact" class="py-24 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="bg-white border border-gray-100 rounded-3xl p-12 md:p-16 text-center shadow-sm">
+      <p class="text-red-600 text-sm font-semibold uppercase tracking-widest mb-3">Let's Talk</p>
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">Got a project in mind?</h2>
+      <p class="text-gray-500 text-lg mb-10 max-w-md mx-auto">
+        I'm open to freelance work and collaborations. Reach out and let's build something great together.
+      </p>
+
+      <a href="mailto:ranjithkumar31072002@gmail.com"
+        class="inline-flex items-center gap-2 bg-red-600 text-white font-semibold px-8 py-4 rounded-full hover:bg-red-700 transition-colors text-sm mb-10">
+        <i class="ri-mail-line text-base"></i> ranjithkumar31072002@gmail.com
+      </a>
+
+      <div class="flex justify-center gap-5 pt-8 border-t border-gray-100">
+        <a href="https://www.linkedin.com/in/ranjithkumar31/" target="_blank"
+          class="w-11 h-11 flex items-center justify-center rounded-full border border-gray-200 text-gray-500 hover:border-red-600 hover:text-red-600 transition-colors">
+          <i class="ri-linkedin-fill text-lg"></i>
+        </a>
+        <a href="https://github.com/RanjithKumarKarnan" target="_blank"
+          class="w-11 h-11 flex items-center justify-center rounded-full border border-gray-200 text-gray-500 hover:border-red-600 hover:text-red-600 transition-colors">
+          <i class="ri-github-fill text-lg"></i>
+        </a>
+        <a href="https://www.fiverr.com/ranjithkumar31" target="_blank"
+          class="w-11 h-11 flex items-center justify-center rounded-full border border-gray-200 text-gray-500 hover:border-red-600 hover:text-red-600 transition-colors text-xs font-bold">
+          F
+        </a>
+        <a href="https://x.com/karnan_ran48825" target="_blank"
+          class="w-11 h-11 flex items-center justify-center rounded-full border border-gray-200 text-gray-500 hover:border-red-600 hover:text-red-600 transition-colors">
+          <i class="ri-twitter-x-fill text-lg"></i>
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
 
-  <script src="/assets/js/script.js"></script>
+<!-- Footer -->
+<footer class="py-6 border-t border-gray-100 text-center text-sm text-gray-400">
+  &copy; 2025 Ranjith Kumar. All rights reserved.
+</footer>
+
+<style>
+  .skill-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: white;
+    border: 1px solid #e5e7eb;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .skill-tag:hover {
+    border-color: #DC2626;
+    color: #DC2626;
+  }
+</style>
+
+<script src="/assets/js/script.js"></script>
 </body>
 </html>
