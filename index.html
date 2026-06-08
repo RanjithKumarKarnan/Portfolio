@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ranjith Kumar | Portfolio</title>
+  <title>Ranjith Kumar | Full Stack Developer</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            brand: '#DC2626'
+            brand: '#22c55e'
           },
           fontFamily: {
             sans: ['Inter', 'system-ui', 'sans-serif']
@@ -20,27 +20,29 @@
     }
   </script>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="bg-white text-gray-900 font-sans antialiased">
 
 <!-- Navbar -->
-<nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur border-b border-gray-100">
+<nav class="fixed top-0 left-0 right-0 z-50 nav-blur border-b border-gray-100/80">
   <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
     <span class="text-xl font-bold tracking-tight">Ranjith<span class="text-[#22c55e]">.</span></span>
 
     <ul class="hidden md:flex gap-8 text-sm font-medium text-gray-600">
-      <li><a href="#about" class="hover:text-[#22c55e] transition-colors">About</a></li>
-      <li><a href="#skills" class="hover:text-[#22c55e] transition-colors">Skills</a></li>
-      <li><a href="#projects" class="hover:text-[#22c55e] transition-colors">Projects</a></li>
-      <li><a href="#testimonial" class="hover:text-[#22c55e] transition-colors">Testimonials</a></li>
-      <li><a href="#contact" class="hover:text-[#22c55e] transition-colors">Contact</a></li>
+      <li><a href="#about" class="nav-link hover:text-[#22c55e] transition-colors">About</a></li>
+      <li><a href="#experience" class="nav-link hover:text-[#22c55e] transition-colors">Experience</a></li>
+      <li><a href="#skills" class="nav-link hover:text-[#22c55e] transition-colors">Skills</a></li>
+      <li><a href="#projects" class="nav-link hover:text-[#22c55e] transition-colors">Projects</a></li>
+      <li><a href="#testimonial" class="nav-link hover:text-[#22c55e] transition-colors">Testimonials</a></li>
+      <li><a href="#contact" class="nav-link hover:text-[#22c55e] transition-colors">Contact</a></li>
     </ul>
 
     <div class="flex items-center gap-3">
-      <a href="mailto:ranjithkumar31072002@gmail.com" class="hidden md:inline-flex items-center gap-2 bg-[#22c55e] text-white text-sm font-medium px-4 py-2 rounded-full hover:bg-green-700 transition-colors">
-        Hire Me
+      <a href="mailto:ranjithkumar31072002@gmail.com"
+        class="hidden md:inline-flex items-center gap-2 bg-[#22c55e] text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-green-600 transition-all shadow-sm shadow-green-200">
+        <i class="ri-mail-send-line text-sm"></i> Hire Me
       </a>
       <button id="menu-toggle" class="md:hidden text-gray-700 text-2xl leading-none">&#9776;</button>
     </div>
@@ -50,6 +52,7 @@
   <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-white px-6 py-4">
     <ul class="flex flex-col gap-4 text-sm font-medium text-gray-700">
       <li><a href="#about" class="hover:text-[#22c55e] transition-colors">About</a></li>
+      <li><a href="#experience" class="hover:text-[#22c55e] transition-colors">Experience</a></li>
       <li><a href="#skills" class="hover:text-[#22c55e] transition-colors">Skills</a></li>
       <li><a href="#projects" class="hover:text-[#22c55e] transition-colors">Projects</a></li>
       <li><a href="#testimonial" class="hover:text-[#22c55e] transition-colors">Testimonials</a></li>
@@ -59,28 +62,39 @@
 </nav>
 
 <!-- Hero -->
-<section id="about" class="min-h-screen flex items-center pt-20">
-  <div class="max-w-6xl mx-auto px-6 w-full">
+<section id="about" class="min-h-screen flex items-center pt-20 hero-bg relative overflow-hidden">
+  <!-- Background grid decoration -->
+  <div class="hero-grid-overlay"></div>
+
+  <div class="max-w-6xl mx-auto px-6 w-full relative z-10">
     <div class="grid md:grid-cols-2 gap-16 items-center py-20">
 
       <!-- Left -->
       <div>
-        <div class="inline-flex items-center gap-2 bg-green-50 text-[#22c55e] text-xs font-semibold px-3 py-1.5 rounded-full mb-6 uppercase tracking-wider">
+        <div class="inline-flex items-center gap-2 bg-green-50 border border-green-100 text-[#16a34a] text-xs font-semibold px-3.5 py-1.5 rounded-full mb-6 uppercase tracking-wider">
           <span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>
           Available for Work
         </div>
-        <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6 tracking-tight">
+
+        <h1 class="text-5xl md:text-6xl font-black leading-[1.1] mb-6 tracking-tight">
           Hi, I'm<br>
-          <span class="text-[#22c55e]">Ranjith Kumar</span>
+          <span class="text-gradient">Ranjith Kumar</span>
         </h1>
-        <p class="text-gray-500 text-lg leading-relaxed mb-8 max-w-md">
-          I build scalable, high-performance web applications and SaaS dashboards using React.js, Next.js, and modern frontend technologies. With 3+ years of experience including freelancing, I focus on creating fast, responsive, and user-centric digital experiences.
+
+        <p class="text-gray-500 text-lg leading-relaxed mb-3 max-w-lg font-medium">
+          Full Stack Developer
         </p>
+        <p class="text-gray-500 text-base leading-relaxed mb-8 max-w-lg">
+          Building scalable SaaS platforms and high-performance web applications using React.js, Next.js, and modern JavaScript. 3+ years of professional & freelance experience across global clients.
+        </p>
+
         <div class="flex items-center gap-4 flex-wrap">
-          <a href="#projects" class="bg-[#22c55e] text-white font-semibold px-6 py-3 rounded-full hover:bg-green-700 transition-colors text-sm">
+          <a href="#projects"
+            class="bg-[#22c55e] text-white font-semibold px-7 py-3.5 rounded-full hover:bg-green-600 transition-all text-sm shadow-md shadow-green-200 hover:shadow-lg hover:shadow-green-300 hover:-translate-y-0.5">
             View Projects
           </a>
-          <a href="#contact" class="border border-gray-200 text-gray-700 font-semibold px-6 py-3 rounded-full hover:border-[#22c55e] hover:text-[#22c55e] transition-colors text-sm">
+          <a href="#contact"
+            class="border border-gray-200 text-gray-700 font-semibold px-7 py-3.5 rounded-full hover:border-[#22c55e] hover:text-[#22c55e] transition-all text-sm hover:-translate-y-0.5">
             Get In Touch
           </a>
         </div>
@@ -88,40 +102,50 @@
         <!-- Stats Row -->
         <div class="flex gap-8 mt-12 pt-8 border-t border-gray-100">
           <div>
-            <p class="text-3xl font-bold text-gray-900">50+</p>
-            <p class="text-sm text-gray-500 mt-1">Projects</p>
+            <p class="text-3xl font-black text-gray-900">50+</p>
+            <p class="text-sm text-gray-500 mt-0.5">Projects</p>
           </div>
           <div>
-            <p class="text-3xl font-bold text-gray-900">4.9</p>
-            <p class="text-sm text-gray-500 mt-1">Fiverr Rating</p>
+            <p class="text-3xl font-black text-gray-900">4.9★</p>
+            <p class="text-sm text-gray-500 mt-0.5">Fiverr Rating</p>
           </div>
           <div>
-            <p class="text-3xl font-bold text-gray-900">3.4yr</p>
-            <p class="text-sm text-gray-500 mt-1">Experience (Professional & Freelance)</p>
+            <p class="text-3xl font-black text-gray-900">3+</p>
+            <p class="text-sm text-gray-500 mt-0.5">Years Experience</p>
           </div>
         </div>
       </div>
 
       <!-- Right -->
-      <div class="flex flex-col gap-5">
+      <div class="flex flex-col gap-5 items-center">
         <!-- Profile Photo -->
-        <div class="relative">
-          <img src="/assets/img/ranjith.png" alt="Ranjith Kumar"
-            class="w-full max-w-xs mx-auto rounded-3xl object-cover shadow-lg">
-          <div class="absolute -bottom-3 -right-3 md:right-8 bg-white border border-gray-100 shadow-md rounded-2xl px-4 py-3 text-sm font-medium text-gray-700">
-            🌍 Global Clients
+        <div class="photo-wrapper">
+          <div class="profile-ring">
+            <img src="assets/img/ranjith.png" alt="Ranjith Kumar"
+              class="w-64 h-64 md:w-72 md:h-72 rounded-3xl object-cover object-top block">
+          </div>
+          <!-- Badges sit inside wrapper, no negative offsets -->
+          <div class="photo-badge photo-badge-tl glass-card rounded-2xl px-3.5 py-2.5 text-sm font-semibold text-gray-700 flex items-center gap-2 shadow-md">
+            ⚡ <span>Fast Delivery</span>
+          </div>
+          <div class="photo-badge photo-badge-br glass-card rounded-2xl px-3.5 py-2.5 text-sm font-semibold text-gray-700 flex items-center gap-2 shadow-md">
+            🌍 <span>Global Clients</span>
           </div>
         </div>
 
         <!-- Fiverr Badge -->
-        <div class="bg-gray-50 border border-gray-100 rounded-2xl p-5 max-w-xs mx-auto w-full">
+        <div class="glass-card rounded-2xl p-5 w-full max-w-xs shadow-sm">
           <div class="flex items-center gap-3 mb-3">
             <a href="https://www.fiverr.com/ranjithkumar31" target="_blank">
-              <img src="/assets/img/Fiverr.png" alt="Fiverr" class="h-5">
+              <img src="assets/img/Fiverr.png" alt="Fiverr" class="h-5">
             </a>
             <div class="flex items-center gap-1 ml-auto">
               <i class="ri-star-fill text-yellow-400 text-sm"></i>
-              <span class="text-sm font-bold">4.9</span>
+              <i class="ri-star-fill text-yellow-400 text-sm"></i>
+              <i class="ri-star-fill text-yellow-400 text-sm"></i>
+              <i class="ri-star-fill text-yellow-400 text-sm"></i>
+              <i class="ri-star-fill text-yellow-400 text-sm"></i>
+              <span class="text-sm font-bold ml-1">4.9</span>
             </div>
           </div>
           <div class="flex gap-4 text-sm text-gray-600">
@@ -141,30 +165,240 @@
   </div>
 </section>
 
+<!-- Experience -->
+<section id="experience" class="py-24 bg-white">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="mb-14">
+      <p class="text-[#22c55e] text-sm font-semibold uppercase tracking-widest mb-2">Where I've Worked</p>
+      <h2 class="text-3xl font-bold text-gray-900">Experience</h2>
+    </div>
+
+    <div class="space-y-5">
+
+      <!-- Invent SoftLabs -->
+      <div class="exp-card rounded-2xl border border-gray-100 overflow-hidden">
+        <div class="p-7">
+          <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-5">
+            <div class="flex items-start gap-4">
+              <div class="exp-icon-box bg-green-50 text-[#22c55e]">
+                <i class="ri-building-line text-lg"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-gray-900 text-base leading-tight">Fullstack Developer</h3>
+                <p class="text-gray-500 text-sm mt-0.5">Invent SoftLabs &nbsp;·&nbsp; Chennai</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 sm:flex-col sm:items-end">
+              <span class="exp-date-badge">Jun 2026 – Present</span>
+              <span class="current-badge">
+                <span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span> Current
+              </span>
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-3 gap-3 mb-5">
+            <div class="exp-stat-box">
+              <p class="text-xl font-black text-gray-900">40%</p>
+              <p class="text-xs text-gray-500 mt-0.5">Code maintainability improved</p>
+            </div>
+            <div class="exp-stat-box">
+              <p class="text-xl font-black text-gray-900">30%</p>
+              <p class="text-xs text-gray-500 mt-0.5">Dev effort reduced</p>
+            </div>
+            <div class="exp-stat-box">
+              <p class="text-xl font-black text-gray-900">35%</p>
+              <p class="text-xs text-gray-500 mt-0.5">Faster load times</p>
+            </div>
+          </div>
+
+          <ul class="exp-list">
+            <li>Migrated enterprise modules from Angular 10 to React, improving code maintainability by 40%.</li>
+            <li>Built reusable component library with React Hooks, reducing development effort by 30%.</li>
+            <li>Optimized rendering performance through code refactoring, achieving 35% faster load times.</li>
+          </ul>
+
+          <div class="flex flex-wrap gap-2 mt-5">
+            <span class="tech-badge">React.js</span>
+            <span class="tech-badge">TypeScript</span>
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">Redux Toolkit</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vakilsearch -->
+      <div class="exp-card rounded-2xl border border-gray-100 overflow-hidden">
+        <div class="p-7">
+          <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-5">
+            <div class="flex items-start gap-4">
+              <div class="exp-icon-box bg-blue-50 text-blue-500">
+                <i class="ri-computer-line text-lg"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-gray-900 text-base leading-tight">Frontend Developer</h3>
+                <p class="text-gray-500 text-sm mt-0.5">Vakilsearch &nbsp;·&nbsp; Chennai</p>
+              </div>
+            </div>
+            <span class="exp-date-badge self-start sm:self-auto">Dec 2025 – May 2026</span>
+          </div>
+
+          <div class="grid sm:grid-cols-3 gap-3 mb-5">
+            <div class="exp-stat-box">
+              <p class="text-xl font-black text-gray-900">10K+</p>
+              <p class="text-xs text-gray-500 mt-0.5">Active dashboard users</p>
+            </div>
+            <div class="exp-stat-box">
+              <p class="text-xl font-black text-gray-900">15+</p>
+              <p class="text-xs text-gray-500 mt-0.5">RESTful APIs integrated</p>
+            </div>
+            <div class="exp-stat-box">
+              <p class="text-xl font-black text-gray-900">25%</p>
+              <p class="text-xs text-gray-500 mt-0.5">Page load time reduced</p>
+            </div>
+          </div>
+
+          <ul class="exp-list">
+            <li>Built and maintained React.js dashboards used by 10,000+ users, improving billing workflow efficiency by 30%.</li>
+            <li>Integrated 15+ RESTful APIs for GST filing data, reducing manual processing time by 40%.</li>
+            <li>Improved SSR performance, reducing page load time by 25%.</li>
+            <li>Deployed 7+ WordPress websites with custom themes, plugins, and automated lead capture.</li>
+          </ul>
+
+          <div class="flex flex-wrap gap-2 mt-5">
+            <span class="tech-badge">React.js</span>
+            <span class="tech-badge">Redux Toolkit</span>
+            <span class="tech-badge">REST APIs</span>
+            <span class="tech-badge">WordPress</span>
+            <span class="tech-badge">SSR</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Freelance -->
+      <div class="exp-card rounded-2xl border border-gray-100 overflow-hidden">
+        <div class="p-7">
+          <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-5">
+            <div class="flex items-start gap-4">
+              <div class="exp-icon-box bg-orange-50 text-orange-500">
+                <i class="ri-user-star-line text-lg"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-gray-900 text-base leading-tight">Freelance Web Developer</h3>
+                <a href="https://www.fiverr.com/ranjithkumar31" target="_blank"
+                  class="text-[#22c55e] text-sm font-medium hover:underline inline-flex items-center gap-1 mt-0.5">
+                  Fiverr Profile <i class="ri-external-link-line text-xs"></i>
+                </a>
+              </div>
+            </div>
+            <span class="exp-date-badge self-start sm:self-auto">Mar 2022 – Jun 2025</span>
+          </div>
+
+          <div class="grid sm:grid-cols-3 gap-3 mb-5">
+            <div class="exp-stat-box">
+              <p class="text-xl font-black text-gray-900">50+</p>
+              <p class="text-xs text-gray-500 mt-0.5">Projects delivered</p>
+            </div>
+            <div class="exp-stat-box">
+              <p class="text-xl font-black text-gray-900">55+</p>
+              <p class="text-xs text-gray-500 mt-0.5">International clients</p>
+            </div>
+            <div class="exp-stat-box">
+              <p class="text-xl font-black text-gray-900">4.9★</p>
+              <p class="text-xs text-gray-500 mt-0.5">Fiverr rating</p>
+            </div>
+          </div>
+
+          <ul class="exp-list">
+            <li>Delivered 50+ responsive, production-ready websites for clients across SaaS, education, and service platforms.</li>
+            <li>Integrated REST APIs and third-party services for dynamic data rendering and interactive features.</li>
+            <li>Operated <strong class="text-gray-700 font-semibold">Ranco Technology</strong> — delivering custom web solutions for startups and educational institutions.</li>
+          </ul>
+
+          <div class="flex flex-wrap gap-2 mt-5">
+            <span class="tech-badge">React.js</span>
+            <span class="tech-badge">Next.js</span>
+            <span class="tech-badge">Tailwind CSS</span>
+            <span class="tech-badge">PHP</span>
+            <span class="tech-badge">MySQL</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- Skills -->
-<section id="skills" class="py-24 bg-gray-50">
+<section id="skills" class="py-24 bg-gray-50/70">
   <div class="max-w-6xl mx-auto px-6">
     <div class="mb-14">
       <p class="text-[#22c55e] text-sm font-semibold uppercase tracking-widest mb-2">What I Work With</p>
       <h2 class="text-3xl font-bold text-gray-900">Skills & Technologies</h2>
     </div>
 
-    <div class="flex flex-wrap gap-3">
-      <span class="skill-tag"><i class="ri-html5-fill text-orange-500"></i> HTML</span>
-      <span class="skill-tag"><i class="ri-css3-fill text-blue-500"></i> CSS</span>
-      <span class="skill-tag"><i class="ri-windy-fill text-teal-500"></i> Tailwind</span>
-      <span class="skill-tag"><i class="ri-bootstrap-fill text-teal-500"></i> Bootstrap</span>
-      <span class="skill-tag"><i class="ri-javascript-fill text-yellow-500"></i> JavaScript</span>
-      <span class="skill-tag"><i class="ri-reactjs-fill text-cyan-500"></i> React.js</span>
-      <span class="skill-tag"><i class="ri-nextjs-fill text-cyan-500"></i> Next.js</span>
-      <span class="skill-tag"><i class="ri-database-2-fill text-orange-500"></i> MySQL</span>
-      <span class="skill-tag"><i class="ri-database-2-fill text-orange-500"></i> PostgreSQL</span>
-      <span class="skill-tag"><i class="ri-flutter-fill text-sky-500"></i> Flutter</span>
-      <span class="skill-tag"><i class="ri-code-s-slash-fill text-blue-400"></i> Dart</span>
-      <span class="skill-tag"><i class="ri-php-fill text-indigo-500"></i> PHP</span>
-      <span class="skill-tag"><i class="ri-wordpress-fill text-green-500"></i> WordPress</span>
-      <span class="skill-tag"><i class="ri-git-branch-fill text-green-500"></i> Git</span>
-      <span class="skill-tag"><i class="ri-github-fill text-green-500"></i> Github</span>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <div class="skill-group-card">
+        <div class="skill-group-icon bg-blue-50 text-blue-500">
+          <i class="ri-layout-4-line text-xl"></i>
+        </div>
+        <h3 class="font-bold text-gray-900 text-sm mb-3">Frontend</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="skill-pill"><i class="ri-html5-fill text-orange-500"></i> HTML5</span>
+          <span class="skill-pill"><i class="ri-css3-fill text-blue-500"></i> CSS3</span>
+          <span class="skill-pill"><i class="ri-javascript-fill text-yellow-500"></i> JavaScript</span>
+          <span class="skill-pill"><i class="ri-reactjs-fill text-cyan-500"></i> React.js</span>
+          <span class="skill-pill"><i class="ri-nextjs-fill text-gray-800"></i> Next.js</span>
+          <span class="skill-pill"><i class="ri-windy-fill text-teal-500"></i> Tailwind</span>
+          <span class="skill-pill"><i class="ri-bootstrap-fill text-purple-500"></i> Bootstrap</span>
+          <span class="skill-pill">Material UI</span>
+        </div>
+      </div>
+
+      <div class="skill-group-card">
+        <div class="skill-group-icon bg-green-50 text-green-600">
+          <i class="ri-server-line text-xl"></i>
+        </div>
+        <h3 class="font-bold text-gray-900 text-sm mb-3">Backend & DB</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="skill-pill"><i class="ri-nodejs-line text-green-600"></i> Node.js</span>
+          <span class="skill-pill"><i class="ri-php-fill text-indigo-500"></i> PHP</span>
+          <span class="skill-pill"><i class="ri-database-2-fill text-blue-500"></i> MySQL</span>
+          <span class="skill-pill"><i class="ri-database-2-fill text-blue-400"></i> PostgreSQL</span>
+          <span class="skill-pill"><i class="ri-database-fill text-green-600"></i> MongoDB</span>
+        </div>
+      </div>
+
+      <div class="skill-group-card">
+        <div class="skill-group-icon bg-purple-50 text-purple-500">
+          <i class="ri-stack-line text-xl"></i>
+        </div>
+        <h3 class="font-bold text-gray-900 text-sm mb-3">State & APIs</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="skill-pill">Redux Toolkit</span>
+          <span class="skill-pill">Context API</span>
+          <span class="skill-pill">REST APIs</span>
+          <span class="skill-pill">Async Fetch</span>
+          <span class="skill-pill">React Hooks</span>
+        </div>
+      </div>
+
+      <div class="skill-group-card">
+        <div class="skill-group-icon bg-orange-50 text-orange-500">
+          <i class="ri-tools-line text-xl"></i>
+        </div>
+        <h3 class="font-bold text-gray-900 text-sm mb-3">Tools & CMS</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="skill-pill"><i class="ri-git-branch-fill text-orange-600"></i> Git</span>
+          <span class="skill-pill"><i class="ri-github-fill"></i> GitHub</span>
+          <span class="skill-pill"><i class="ri-wordpress-fill text-blue-600"></i> WordPress</span>
+          <span class="skill-pill">Shopify</span>
+          <span class="skill-pill">Strapi</span>
+          <span class="skill-pill">Vercel</span>
+          <span class="skill-pill">Netlify</span>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -174,88 +408,138 @@
   <div class="max-w-6xl mx-auto px-6">
     <div class="mb-14">
       <p class="text-[#22c55e] text-sm font-semibold uppercase tracking-widest mb-2">My Work</p>
-      <h2 class="text-3xl font-bold text-gray-900">Featugreen Projects</h2>
+      <h2 class="text-3xl font-bold text-gray-900">Featured Projects</h2>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-      <div class="group border border-gray-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
-        <div class="bg-gray-100 overflow-hidden h-48 flex items-center justify-center">
-          <img src="/assets/img/projects/3.png" alt="Siddhars Research" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+      <div class="project-card group border border-gray-100 rounded-2xl overflow-hidden hover:shadow-xl hover:border-green-100 transition-all duration-300">
+        <div class="bg-gray-100 overflow-hidden h-48">
+          <img src="assets/img/projects/3.png" alt="Siddhars Institution"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
         </div>
-        <div class="p-5">
-          <h3 class="font-bold text-gray-900 mb-2">Siddhars Research</h3>
+        <div class="p-6">
+          <h3 class="font-bold text-gray-900 mb-2">Siddhars Institution</h3>
           <p class="text-sm text-gray-500 leading-relaxed mb-4">
-            Student application portal with secure database management, tracking, and admin dashboard.
+            Full-stack admission management system with student application portal, fee tracking, and admin dashboard.
           </p>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            <span class="proj-tag">React.js</span>
+            <span class="proj-tag">Bootstrap</span>
+            <span class="proj-tag">PHP</span>
+            <span class="proj-tag">MySQL</span>
+          </div>
           <a href="https://www.18siddharsresearch.com" target="_blank"
-            class="inline-flex items-center gap-1.5 text-sm font-medium text-[#22c55e] hover:gap-2.5 transition-all">
+            class="inline-flex items-center gap-1.5 text-sm font-semibold text-[#22c55e] hover:gap-3 transition-all">
             Visit Site <i class="ri-arrow-right-up-line"></i>
           </a>
         </div>
       </div>
 
-      <div class="group border border-gray-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
-        <div class="bg-gray-100 overflow-hidden h-48 flex items-center justify-center">
-          <img src="/assets/img/projects/1.png" alt="Sol Sprint" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+      <div class="project-card group border border-gray-100 rounded-2xl overflow-hidden hover:shadow-xl hover:border-green-100 transition-all duration-300">
+        <div class="bg-gray-100 overflow-hidden h-48">
+          <img src="assets/img/projects/2.png" alt="Pech Weg"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
         </div>
-        <div class="p-5">
+        <div class="p-6">
+          <h3 class="font-bold text-gray-900 mb-2">Pech Weg</h3>
+          <p class="text-sm text-gray-500 leading-relaxed mb-4">
+            Accident assistance platform (Netherlands) — redesigned admin dashboard with fully responsive UI/UX.
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            <span class="proj-tag">React.js</span>
+            <span class="proj-tag">Tailwind CSS</span>
+          </div>
+          <a href="https://www.pech-weg.nl" target="_blank"
+            class="inline-flex items-center gap-1.5 text-sm font-semibold text-[#22c55e] hover:gap-3 transition-all">
+            Visit Site <i class="ri-arrow-right-up-line"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card group border border-gray-100 rounded-2xl overflow-hidden hover:shadow-xl hover:border-green-100 transition-all duration-300">
+        <div class="bg-gray-100 overflow-hidden h-48">
+          <img src="assets/img/projects/1.png" alt="Sol Sprint"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="p-6">
           <h3 class="font-bold text-gray-900 mb-2">Sol Sprint</h3>
           <p class="text-sm text-gray-500 leading-relaxed mb-4">
             Web3 wallet connect platform supporting Phantom, Solflare, Backpack & MetaMask with Google Sheets logging.
           </p>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            <span class="proj-tag">React.js</span>
+            <span class="proj-tag">Web3</span>
+            <span class="proj-tag">JavaScript</span>
+          </div>
           <a href="https://www.solsprint.xyz" target="_blank"
-            class="inline-flex items-center gap-1.5 text-sm font-medium text-[#22c55e] hover:gap-2.5 transition-all">
+            class="inline-flex items-center gap-1.5 text-sm font-semibold text-[#22c55e] hover:gap-3 transition-all">
             Visit Site <i class="ri-arrow-right-up-line"></i>
           </a>
         </div>
       </div>
 
-      <div class="group border border-gray-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
-        <div class="bg-gray-100 overflow-hidden h-48 flex items-center justify-center">
-          <img src="/assets/img/projects/2.png" alt="Pech Weg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+      <div class="project-card group border border-gray-100 rounded-2xl overflow-hidden hover:shadow-xl hover:border-green-100 transition-all duration-300">
+        <div class="bg-gray-100 overflow-hidden h-48">
+          <img src="assets/img/projects/5.png" alt="Woterz"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
         </div>
-        <div class="p-5">
-          <h3 class="font-bold text-gray-900 mb-2">Pech Weg</h3>
+        <div class="p-6">
+          <h3 class="font-bold text-gray-900 mb-2">Woterz (USA)</h3>
           <p class="text-sm text-gray-500 leading-relaxed mb-4">
-            Accident assistance website (Netherlands) — greenesigned dashboard UI and improved admin panel backend.
+            Production-level website for a water solutions company — fully responsive with SEO optimization and fast load times.
           </p>
-          <a href="https://www.pech-weg.nl" target="_blank"
-            class="inline-flex items-center gap-1.5 text-sm font-medium text-[#22c55e] hover:gap-2.5 transition-all">
-            Visit Site <i class="ri-arrow-right-up-line"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="group border border-gray-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
-        <div class="bg-gray-100 overflow-hidden h-48 flex items-center justify-center">
-          <img src="/assets/img/projects/5.png" alt="Woterz" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-        </div>
-        <div class="p-5">
-          <h3 class="font-bold text-gray-900 mb-2">Woterz</h3>
-          <p class="text-sm text-gray-500 leading-relaxed mb-4">
-            Modern landing page for a water solutions company, responsive and optimized for engagement.
-          </p>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            <span class="proj-tag">React.js</span>
+            <span class="proj-tag">Tailwind CSS</span>
+            <span class="proj-tag">SEO</span>
+          </div>
           <a href="https://www.site.woterz.com" target="_blank"
-            class="inline-flex items-center gap-1.5 text-sm font-medium text-[#22c55e] hover:gap-2.5 transition-all">
+            class="inline-flex items-center gap-1.5 text-sm font-semibold text-[#22c55e] hover:gap-3 transition-all">
             Visit Site <i class="ri-arrow-right-up-line"></i>
           </a>
         </div>
       </div>
 
-      <div class="group border border-gray-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
-        <div class="bg-gray-100 overflow-hidden h-48 flex items-center justify-center">
-          <img src="/assets/img/projects/4.png" alt="Prime Self Driving Cars" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+      <div class="project-card group border border-gray-100 rounded-2xl overflow-hidden hover:shadow-xl hover:border-green-100 transition-all duration-300">
+        <div class="bg-gray-100 overflow-hidden h-48">
+          <img src="assets/img/projects/4.png" alt="Prime Self Driving Cars"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
         </div>
-        <div class="p-5">
+        <div class="p-6">
           <h3 class="font-bold text-gray-900 mb-2">Prime Self Driving Cars</h3>
           <p class="text-sm text-gray-500 leading-relaxed mb-4">
-            Car rental website with modern frontend, vehicle showcase, and easy booking interface.
+            Modern car rental website with vehicle showcase, responsive design, and easy booking interface.
           </p>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            <span class="proj-tag">React.js</span>
+            <span class="proj-tag">Tailwind CSS</span>
+          </div>
           <a href="https://www.primeselfdrivingcars.com" target="_blank"
-            class="inline-flex items-center gap-1.5 text-sm font-medium text-[#22c55e] hover:gap-2.5 transition-all">
+            class="inline-flex items-center gap-1.5 text-sm font-semibold text-[#22c55e] hover:gap-3 transition-all">
             Visit Site <i class="ri-arrow-right-up-line"></i>
           </a>
+        </div>
+      </div>
+
+      <div class="project-card group border border-gray-100 rounded-2xl overflow-hidden hover:shadow-xl hover:border-green-100 transition-all duration-300">
+        <div class="bg-gray-100 overflow-hidden h-48 flex items-center justify-center">
+          <img src="assets/img/projects/6.png" alt="Bharath Primary School"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="p-6">
+          <h3 class="font-bold text-gray-900 mb-2">Bharath Primary School</h3>
+          <p class="text-sm text-gray-500 leading-relaxed mb-4">
+            Complete school website from scratch — established the school's first digital presence with modern, scalable frontend.
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            <span class="proj-tag">React.js</span>
+            <span class="proj-tag">Tailwind CSS</span>
+            <span class="proj-tag">Vercel</span>
+          </div>
+          <span class="inline-flex items-center gap-1.5 text-sm font-medium text-gray-400">
+            <i class="ri-lock-line text-xs"></i> Private Project
+          </span>
         </div>
       </div>
 
@@ -263,65 +547,73 @@
   </div>
 </section>
 
-<section id="testimonial" class="py-24 bg-gray-50 overflow-hidden">
+<!-- Testimonials -->
+<section id="testimonial" class="py-24 bg-gray-50/70 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
 
-<div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center gap-3 mb-6">
+        <img src="assets/img/Fiverr.png" class="h-7">
+        <div class="flex items-center gap-1">
+          <i class="ri-star-fill text-yellow-400"></i>
+          <i class="ri-star-fill text-yellow-400"></i>
+          <i class="ri-star-fill text-yellow-400"></i>
+          <i class="ri-star-fill text-yellow-400"></i>
+          <i class="ri-star-fill text-yellow-400"></i>
+          <span class="ml-2 font-bold text-gray-800">4.9</span>
+        </div>
+      </div>
+      <p class="text-[#22c55e] text-sm font-semibold uppercase tracking-widest mb-3">Client Reviews</p>
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-900">
+        What Clients Say
+      </h2>
+      <p class="mt-4 text-gray-500 max-w-xl mx-auto">
+        Trusted by 55+ clients across 15+ countries on Fiverr.
+      </p>
+    </div>
 
-<div class="text-center mb-16">
-<img src="./assets/img/Fiverr.png" class="w-16 mx-auto mb-4">
+    <!-- Row 1 -->
+    <div class="overflow-hidden mb-6">
+      <div id="row1" class="flex gap-5 w-max marquee-left"></div>
+    </div>
 
-<h2 class="text-4xl md:text-5xl font-bold text-gray-900">
-Client Voices <span class="text-green-500">.</span>
-</h2>
+    <!-- Row 2 -->
+    <div class="overflow-hidden">
+      <div id="row2" class="flex gap-5 w-max marquee-right"></div>
+    </div>
 
-<p class="mt-4 text-gray-600 max-w-xl mx-auto">
-Trusted by clients across the world.
-</p>
-
-</div>
-
-
-<!-- Row 1 -->
-<div class="overflow-hidden mb-8">
-<div id="row1" class="flex gap-6 w-max marquee-left"></div>
-</div>
-
-
-<!-- Row 2 -->
-<div class="overflow-hidden">
-<div id="row2" class="flex gap-6 w-max marquee-right"></div>
-</div>
-
-</div>
-
+  </div>
 </section>
 
 <!-- Contact -->
-<section id="contact" class="py-24 bg-gray-50">
+<section id="contact" class="py-24 bg-white">
   <div class="max-w-6xl mx-auto px-6">
-    <div class="bg-white border border-gray-100 rounded-3xl p-12 md:p-16 text-center shadow-sm">
-      <p class="text-[#22c55e] text-sm font-semibold uppercase tracking-widest mb-3">Let's Talk</p>
-      <h2 class="text-4xl font-bold text-gray-900 mb-4">Got a project in mind?</h2>
-      <p class="text-gray-500 text-lg mb-10 max-w-md mx-auto">
-        I'm open to freelance work and collaborations. Reach out and let's build something great together.
+    <div class="contact-card rounded-3xl p-12 md:p-16 text-center relative overflow-hidden">
+      <!-- Background decoration -->
+      <div class="contact-bg-circle"></div>
+
+      <p class="text-[#22c55e] text-sm font-semibold uppercase tracking-widest mb-4 relative z-10">Let's Work Together</p>
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 relative z-10">Got a project in mind?</h2>
+      <p class="text-gray-500 text-lg mb-10 max-w-md mx-auto relative z-10">
+        Open to freelance work and collaborations. Let's build something great together.
       </p>
 
       <a href="mailto:ranjithkumar31072002@gmail.com"
-        class="inline-flex items-center gap-2 bg-[#22c55e] text-white font-semibold px-8 py-4 rounded-full hover:bg-green-700 transition-colors text-sm mb-10">
+        class="relative z-10 inline-flex items-center gap-2 bg-[#22c55e] text-white font-semibold px-8 py-4 rounded-full hover:bg-green-600 transition-all text-sm mb-10 shadow-lg shadow-green-200 hover:shadow-xl hover:shadow-green-300 hover:-translate-y-0.5">
         <i class="ri-mail-line text-base"></i> ranjithkumar31072002@gmail.com
       </a>
 
-      <div class="flex justify-center gap-5 pt-8 border-t border-gray-100">
+      <div class="flex justify-center gap-4 pt-8 border-t border-gray-100 relative z-10">
         <a href="https://www.linkedin.com/in/ranjithkumar31/" target="_blank"
-          class="w-11 h-11 flex items-center justify-center rounded-full border border-gray-200 text-gray-500 hover:border-[#22c55e] hover:text-[#22c55e] transition-colors">
+          class="social-btn">
           <i class="ri-linkedin-fill text-lg"></i>
         </a>
         <a href="https://github.com/RanjithKumarKarnan" target="_blank"
-          class="w-11 h-11 flex items-center justify-center rounded-full border border-gray-200 text-gray-500 hover:border-[#22c55e] hover:text-[#22c55e] transition-colors">
+          class="social-btn">
           <i class="ri-github-fill text-lg"></i>
         </a>
         <a href="https://www.fiverr.com/ranjithkumar31" target="_blank"
-          class="w-11 h-11 flex items-center justify-center rounded-full border border-gray-200 text-gray-500 hover:border-[#22c55e] hover:text-[#22c55e] transition-colors text-xs font-bold">
+          class="social-btn text-xs font-bold">
           Fi
         </a>
       </div>
@@ -331,29 +623,9 @@ Trusted by clients across the world.
 
 <!-- Footer -->
 <footer class="py-6 border-t border-gray-100 text-center text-sm text-gray-400">
-  &copy; 2025 Ranjith Kumar. All rights reserved.
+  &copy; 2026 Ranjith Kumar · Full Stack Developer · Chennai, India
 </footer>
 
-<style>
-  .skill-tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    background: white;
-    border: 1px solid #e5e7eb;
-    padding: 0.5rem 1rem;
-    border-radius: 9999px;
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: #374151;
-    transition: border-color 0.2s, color 0.2s;
-  }
-  .skill-tag:hover {
-    border-color: #DC2626;
-    color: #DC2626;
-  }
-</style>
-
-<script src="/assets/js/script.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
